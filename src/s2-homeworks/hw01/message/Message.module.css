@@ -1,0 +1,66 @@
+.message {
+    margin: 190px 118px 0 50px;
+
+}
+
+.imageAndText {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.imageAndText img {
+    height: 48px;
+    margin: 10px;
+    z-index: 1;
+}
+
+.text {
+    max-width: 527px;
+    border-radius: 10px 10px 0 10px;
+    background-color: #0066cc;
+    color: #FFFFFF;
+    position: relative;
+    padding: 10px;
+
+}
+
+.text:after, .text:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+}
+.text:before {
+    right: -15px;
+    width: 24px;
+    background-color: #0066cc;
+    border-bottom-left-radius: 15px 0;
+ }
+
+.text:after {
+     right: -26px;
+     width: 26px;
+     background-color: white;
+     border-bottom-left-radius: 21px;
+ }
+
+.name {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.messageText {
+
+
+}
+
+.time {
+    flex-direction: row-reverse;
+    display: flex;
+    margin: -2px 22px 0;
+    font: 10px 'Montserrat';
+    font-weight: 600;
+}

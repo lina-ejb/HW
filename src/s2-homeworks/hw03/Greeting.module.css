@@ -12,19 +12,24 @@
     color: #CC0000;
     font-family: Montserrat, sans-serif;
     font-size: 14px;
+
 }
 
 .input {
-
+    width: 372px;
+    height: 36px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
 }
 
 .input:focus {
+
 }
 
 .errorInput {
     width: 372px;
     height: 36px;
-    border: 1px solid #D1D1D1;
+    border: 1px solid #CC0000;
     border-radius: 5px;
 }
 

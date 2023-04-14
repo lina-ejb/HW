@@ -1,6 +1,6 @@
 {
   "name": "hws2",
-  "homepage": "http://lina-ejb.github.io/hws2",
+  "homepage": "http://lina-ejb.github.io/HW",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/lina-ejb/hws2.git"
+    "deploy": "gh-pages -d build -r https://github.com/lina-ejb/HW.git"
   },
   "eslintConfig": {
     "extends": [

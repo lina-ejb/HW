@@ -14,12 +14,12 @@
     color: #0066CC;
     background-color: #FFFFFF;
     width: 167px;
-    border: 1px solid rgb(0,102,204);
+    border: 1px solid rgb(0, 102, 204);
     font-size: 14px;
 }
 
 .default {
-   background-color: #004D99;
+    background-color: #004D99;
 
 }
 
@@ -34,7 +34,7 @@
 }
 
 .red:hover {
-    background-color:  #FF1A47;
+    background-color: #FF1A47;
     width: 167px;
 }
 
@@ -46,7 +46,7 @@
 .default:active {
     background-color: #0066CC;
     width: 130px;
-    width: 150px;
+
 }
 
 .secondary:active {
@@ -63,11 +63,8 @@
     background-color: #004D99;
     opacity: 0.5;
     color: #002E5C;
+    width: 130px;
 }
+.disabled {
 
-
-
-.blue:hover {
-  background-color:  #0080FF;
-    width: 167px;
 }

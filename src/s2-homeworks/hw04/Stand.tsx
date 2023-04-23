@@ -57,7 +57,7 @@ const Stand = () => {
                 <div>
                     <SuperButton
                         id={'hw4-super-button-disabled'}
-                        xType={'red'}
+                        xType={'disabled'}
                         disabled
                     >
                         disabled
@@ -82,7 +82,7 @@ const Stand = () => {
                         checked={stateForAllCheckboxes}
                         onChangeChecked={setChecked}
                     >
-                        some text
+                        Homework
                     </SuperCheckbox>
                 </div>
                 {/*совместим со старым кодом:*/}
@@ -91,6 +91,7 @@ const Stand = () => {
                         id={'hw4-super-checkbox-like-old'}
                         checked={stateForAllCheckboxes}
                         onChange={(e) => setChecked(e.currentTarget.checked)}
+                        onChangeChecked={setChecked}
                     />
                 </div>
             </div>

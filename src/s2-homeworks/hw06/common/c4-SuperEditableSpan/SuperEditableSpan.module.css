@@ -1,11 +1,15 @@
 .spanBlock {
+
 }
 
 .span {
 }
 
 .input {
+    border: none;
+    outline: none;
 }
 
 .pen {
+
 }

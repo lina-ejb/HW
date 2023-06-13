@@ -5,6 +5,7 @@ import s2 from '../../s1-main/App.module.css'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import User from './User'
 
+
 /*
 * 1 - дописать типы и логику (сортировка по имени, фильтрация по совершеннолетию) homeWorkReducer, проверить тестом
 * 2 - дописать компоненту User
@@ -36,7 +37,7 @@ const HW8 = () => {
     const sortUp = () => {
         setPeople(
             homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'})
-        ) // в алфавитном порядке a.name > b.name
+        )   // в алфавитном порядке a.name > b.name
         setCurrentSort('up')
     }
 
@@ -53,11 +54,14 @@ const HW8 = () => {
         setCurrentSort('18')
     }
 
+
     return (
         <div id={'hw3'}>
             <div className={s2.hwTitle}>Homework #8</div>
             <div className={s2.hw}>
                 <div className={s.container}>
+
+
                     <div className={s.buttonsContainer}>
                         <SuperButton
                             id={'hw8-button-up'}
@@ -92,6 +96,7 @@ const HW8 = () => {
 
                         <tbody>{finalPeople}</tbody>
                     </table>
+
                 </div>
             </div>
         </div>

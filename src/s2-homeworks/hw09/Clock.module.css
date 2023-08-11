@@ -1,14 +1,30 @@
+
 .buttonsContainer {
+    display: flex;
+    gap: 15px;
 }
 
 .clock {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
 }
 
 .watch {
+
+
 }
 
 .watch strong {
+
 }
 
 .more {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+    font: normal 15px Montserrat, sans-serif;
+    color: rgba(0, 0, 0, 0.5);
 }

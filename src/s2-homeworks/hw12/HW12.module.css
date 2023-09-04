@@ -19,5 +19,10 @@ html {
 }
 
 .select {
-
+    display: block;
+    padding: 3px;
+    width:  110px;
+}
+label {
+    font-size: 14px;
 }

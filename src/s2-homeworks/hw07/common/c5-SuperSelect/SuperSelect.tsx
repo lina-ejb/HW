@@ -5,6 +5,8 @@ import React, {
 } from 'react'
 import s from './SuperSelect.module.css'
 import {light} from "@mui/material/styles/createPalette";
+import {Simulate} from "react-dom/test-utils";
+import change = Simulate.change;
 
 type DefaultSelectPropsType = DetailedHTMLProps<
     SelectHTMLAttributes<HTMLSelectElement>,
@@ -13,7 +15,7 @@ type DefaultSelectPropsType = DetailedHTMLProps<
 
 type SuperSelectPropsType = DefaultSelectPropsType & {
     options?: any[]
-    onChangeOption?: (option: any) => void
+    onChangeOption?: (options: number) => void
 }
 
 const SuperSelect: React.FC<SuperSelectPropsType> = ({

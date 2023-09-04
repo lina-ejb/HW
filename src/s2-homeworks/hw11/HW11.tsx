@@ -21,6 +21,7 @@ function HW11() {
         if (Array.isArray(value)) {
             setValue1(value[0])
             setValue2(value[1]);
+
         } else {
             setValue1(value)
         }

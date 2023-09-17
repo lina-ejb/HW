@@ -5,7 +5,7 @@
     border-radius: 20px;
     padding: 10px;
     height: 40px;
-    margin: 73px auto;
+    margin: 60px;
     display: flex;
 }
 
@@ -13,6 +13,7 @@
     background-color: transparent;
     width: calc(100% - 25px);
     border: none;
+    outline: none;
 }
 
 .button {
@@ -28,11 +29,7 @@
 
 }
 
-.button:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
+
 
 .button:active {
     background-color: #3a7999;

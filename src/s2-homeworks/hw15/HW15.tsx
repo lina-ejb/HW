@@ -91,7 +91,7 @@ const HW15 = () => {
 		// setSearchParams(
 		setSearchParams({
 			...Object.fromEntries(searchParams),
-			sort: sortParams === '1tech' ? 'des-order' : sortParams === '0tech' ? 'asc-order' : 'def-order'
+			sort: sortParams === '1tech' ? 'descending-sort-order' : sortParams === '0tech' ? 'ascending-sort-order' : 'default-sort-order'
 		})
 	}
 
@@ -139,10 +139,7 @@ const HW15 = () => {
 						<SuperSort sort={sort} value={'developer'} onChange={onChangeSort}/>
 					</div>
 				</div>
-
 				{mappedTechs}
-
-
 			</div>
 		</div>
 	)

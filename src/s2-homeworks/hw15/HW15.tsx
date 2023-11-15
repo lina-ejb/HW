@@ -82,6 +82,7 @@ const HW15 = () => {
 	const onChangeSort = (newSort: string) => {
 		// делает студент
 		// setSort(
+		console.log(newSort)
 		let sortParams = newSort
 		setSort(newSort)
 		setPage(1)
@@ -91,7 +92,8 @@ const HW15 = () => {
 		// setSearchParams(
 		setSearchParams({
 			...Object.fromEntries(searchParams),
-			sort: sortParams === '1tech' ? 'descending-sort-order' : sortParams === '0tech' ? 'ascending-sort-order' : 'default-sort-order'
+			sort: sortParams === '1tech' || sortParams === '1developer' ? 'descending-order' : sortParams === '0tech'
+			|| sortParams === '0developer' ? 'ascending-order' : 'default-order'
 		})
 	}
 

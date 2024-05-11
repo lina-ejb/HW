@@ -1,9 +1,7 @@
-import React, {Dispatch, SetStateAction, useState} from 'react'
+import React, {useState} from 'react'
 import {v1} from 'uuid'
 import s2 from '../../s1-main/App.module.css'
 import GreetingContainer from './GreetingContainer'
-import User from "../hw08/User";
-
 
 /*
 * 1 - описать тип UserType
@@ -21,19 +19,20 @@ import User from "../hw08/User";
 
 // types
 export type UserType = {
-    _id: string // fixed
-    name: string // fixed
+    _id: string // need to fix any
+    name: string // need to fix any
 }
 
-export const pureAddUserCallback = (name: string, setUsers: Dispatch<SetStateAction<Array<UserType>>>, users: Array<UserType>) => { // fixed
+export const pureAddUserCallback = (name: string, setUsers: (value: UserType[]) => void, users: UserType[]) => { // need to fix any
     const user = {_id: v1(), name: name}
-    setUsers([user, ...users])
+
+    setUsers([...users, user])
 }
 
 const HW3 = () => {
-    const [users, setUsers] = useState<Array<UserType>>([]) // fixed
+    const [users, setUsers] = useState<UserType[]>([]) // need to fix any
 
-    const addUserCallback = (name: string) => { // fixed
+    const addUserCallback = (name: string) => { // need to fix any
         pureAddUserCallback(name, setUsers, users)
     }
 

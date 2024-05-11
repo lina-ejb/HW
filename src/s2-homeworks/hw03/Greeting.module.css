@@ -1,49 +1,43 @@
 .greetingForm {
-    width: 500px;
-    padding: 25px;
+    input {
+        border-radius: 5px;
+        width: 372px;
+        height: 36px;
+    }
 }
 
 .inputAndButtonContainer {
-
-
+    display: flex;
+    gap: 12px;
 }
 
 .error {
-    color: #CC0000;
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-
+    font: 400 14px/17px 'Montserrat', sans-serif;
+    color: rgba(204, 0, 0, 1);;
 }
 
 .input {
-    width: 372px;
-    height: 36px;
-    border: 1px solid #D1D1D1;
-    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 1);
+
+
 }
 
 .input:focus {
-
+    outline: none;
 }
 
 .errorInput {
-    width: 372px;
-    height: 36px;
-    border: 1px solid #CC0000;
-    border-radius: 5px;
+    border: 1px solid rgba(204, 0, 0, 1);
+    outline: none;
+
 }
 
 .button {
-    /*display: inline-block;*/
-    background-color: #0066CC;
+    padding: 8px 24px;
+    height: 36px;
     border: none;
+    background-color: rgba(0, 102, 204, 1);
     color: white;
-    padding: 10px 24px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: Montserrat, sans-serif;
-    opacity: 0.5;
     border-radius: 3px;
 }
 
@@ -54,12 +48,13 @@
 }
 
 .button:disabled {
+    opacity: 50%;
 }
 
 .text {
+    font: 400 14px/20px 'Montserrat', sans-serif;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 14px;
-    font-family: Montserrat, sans-serif;
+    margin-bottom: 9px;
 
 }
 

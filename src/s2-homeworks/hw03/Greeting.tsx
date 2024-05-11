@@ -2,18 +2,19 @@ import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
-    name: string // need to fix any
-    setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any
-    addUser: () => void
-    onBlur: () => void // need to fix any
-    onEnter: (e: KeyboardEvent<HTMLInputElement>) => void // need to fix any
+    name: string// need to fix any
+    setNameCallback: (e: React.ChangeEvent<HTMLInputElement>) => void // need to fix any
+    addUser: () => void // need to fix any
+    onBlur: () => void  // need to fix any
+    onEnter: (e: any) => void // need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
-    lastUserName?: string // need to fix any
+    lastUserName?: string | null // need to fix any
 }
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
+
     {
         name,
         setNameCallback,
@@ -25,9 +26,9 @@ const Greeting: React.FC<GreetingPropsType> = (
         lastUserName,
     } // деструктуризация пропсов
 ) => {
-    const inputClass = error ? s.errorInput : s.input
-       /* s.errorInput // need to fix with (? s.errorInput : s.input)*/
 
+    const inputClass = error ? s.errorInput  : s.input // need to fix with (?:)
+    console.log()
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
             <div className={s.text}>
@@ -47,19 +48,19 @@ const Greeting: React.FC<GreetingPropsType> = (
                         onKeyDown={onEnter}
                         onBlur={onBlur}
                     />
-                    <button
-                        id={'hw3-button'}
-                        onClick={addUser}
-                        className={s.button}
-                        disabled={!name.trim()}
-                    >
-                        add
-                    </button>
-                </div>
-                <div id={'hw3-error'} className={s.error}>
-                    {error}
+                    <div id={'hw3-error'} className={s.error}>
+                        {error}
+                    </div>
                 </div>
 
+                <button
+                    id={'hw3-button'}
+                    onClick={addUser}
+                    className={s.button}
+                    disabled={!name.trim()}
+                >
+                    add
+                </button>
             </div>
 
             {lastUserName && (
